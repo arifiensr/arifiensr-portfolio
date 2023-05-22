@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+        'oxygen-mono': ['Oxygen Mono', 'monospace'],
+        'major-mono-display': ['Major Mono Display', 'monospace'],
+      },
+    },
   },
   plugins: [],
 }

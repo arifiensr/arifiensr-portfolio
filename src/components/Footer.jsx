@@ -1,7 +1,9 @@
-export default function Footer() {
+const Footer = () => {
   return (
-    <section id="footer" className="fixed bottom-0 bg-white">
+    <section id="footer" className="bg-white ">
       <h1>Footer</h1>
     </section>
   )
 }
+
+export default Footer

@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 import Intro from '../components/Intro'
 import Navbar from '../components/Navbar'
 
-export default function Home() {
+const Home = () => {
   return (
     <section id="home" className="relative">
       <Navbar />
@@ -15,3 +15,5 @@ export default function Home() {
     </section>
   )
 }
+
+export default Home

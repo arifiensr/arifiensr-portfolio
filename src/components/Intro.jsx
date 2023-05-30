@@ -12,41 +12,41 @@ import { RxLinkedinLogo, RxGithubLogo } from 'react-icons/rx'
 const Intro = () => {
   return (
     <section id="intro" className="flex items-center justify-center h-screen bg-slate-50">
-      <div className="container w-3/5 m-auto">
-        <div id="intro-main" className="flex ">
-          <div id="intro-main-text" className="w-7/12 ">
-            <h1 className="pb-2 text-5xl font-bold font-poppins">Hi! I'm M. Arifien Syachrizal</h1>
-            <h2 className="pb-2 text-3xl font-bold font-oxygen-mono text-red-700">Front-End Web Developer</h2>
-            <p className="font-poppins leading-7 tracking-wide">I create visually stunning and intuitive web experiences with a focus on seamless interactions and captivating design. Let's embark on a journey of exceptional web development together!</p>
-            <div className="flex gap-3">
+      <div className="container m-auto w-full md:w-[1000px]">
+        <div id="intro-main" className="flex flex-col-reverse items-center justify-center md:flex-row">
+          <div id="intro-main-text" className="w-full mt-8 md:w-7/12 md:mt-0">
+            <h1 className="pb-2 text-4xl font-bold text-center md:text-5xl font-poppins md:text-start">Hi! I'm M. Arifien Syachrizal</h1>
+            <h2 className="pb-2 text-2xl font-bold text-center text-red-700 md:text-3xl font-oxygen-mono md:text-start">Front-End Web Developer</h2>
+            <p className="leading-7 tracking-wide text-center font-poppins md:text-start">I create visually stunning and intuitive web experiences with a focus on seamless interactions and captivating design. Let's embark on a journey of exceptional web development together!</p>
+            <div className="flex justify-center gap-3 md:justify-start">
               <a href="https://www.linkedin.com/in/arifiensr/" target="_blank">
-                <RxLinkedinLogo className="mt-8 text-4xl hover:text-red-700 transition-all duration-[400ms]" />
+                <RxLinkedinLogo className="mt-6 md:mt-8 text-4xl hover:text-red-700 transition-all duration-[400ms]" />
               </a>
               <a href="https://github.com/arifiensr" target="_blank">
-                <RxGithubLogo className="mt-8 text-4xl hover:text-red-700 transition-all duration-[400ms]" />
+                <RxGithubLogo className="mt-6 md:mt-8 text-4xl hover:text-red-700 transition-all duration-[400ms]" />
               </a>
             </div>
           </div>
-          <div id="intro-main-image" className="flex items-center justify-center w-5/12">
-            <div className="w-2/3 h-auto overflow-hidden rounded-full">
+          <div id="intro-main-image" className="flex items-center justify-center w-full mt-24 md:mt-0 md:w-5/12">
+            <div className="w-auto overflow-hidden rounded-full h-80">
               <img src={profileImage} className="object-contain w-full h-full " />
             </div>
           </div>
         </div>
 
-        <div id="intro-skills" className="flex h-16 mt-12">
-          <div className="flex items-center justify-start w-40 h-full border-r-4 border-r-black">
-            <span className="text-2xl font-bold">Tech Stack</span>
+        <div id="intro-skills" className="flex flex-col items-center justify-center h-auto mt-6 md:mt-12 md:h-12 md:flex-row">
+          <div className="flex items-center justify-center w-40 h-full p-3 border-b-2 md:p-0 md:w-40 md:justify-start md:border-b-0 md:border-r-2 md:border-r-black border-b-slate-500">
+            <span className="text-2xl font-bold text-center">Tech Stack</span>
           </div>
-          <div className="flex flex-auto items-center justify-evenly">
-            <img src={htmlImage} className="w-auto h-full" />
-            <img src={cssImage} className="w-auto h-full" />
-            <img src={jsImage} className="w-auto h-full" />
-            <img src={reactImage} className="w-auto h-full" />
-            <img src={viteImage} className="w-auto h-full" />
-            <img src={bootstrapImage} className="w-auto h-full" />
-            <img src={sassImage} className="w-auto h-full" />
-            <img src={tailwindImage} className="w-auto h-full" />
+          <div className="flex items-center flex-auto w-full mt-6 justify-evenly md:mt-0">
+            <img src={htmlImage} className="w-auto h-12" />
+            <img src={cssImage} className="w-auto h-12" />
+            <img src={jsImage} className="w-auto h-12" />
+            <img src={reactImage} className="w-auto h-12" />
+            <img src={viteImage} className="w-auto h-12" />
+            <img src={bootstrapImage} className="w-auto h-12" />
+            <img src={sassImage} className="w-auto h-12" />
+            <img src={tailwindImage} className="w-auto h-12" />
           </div>
         </div>
       </div>

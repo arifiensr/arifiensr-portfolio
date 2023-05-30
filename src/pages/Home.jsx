@@ -1,5 +1,5 @@
 import About from '../components/About'
-import Cards from '../components/Cards'
+import Projects from '../components/Projects'
 import Footer from '../components/Footer'
 import Intro from '../components/Intro'
 import Navbar from '../components/Navbar'
@@ -10,7 +10,7 @@ const Home = () => {
       <Navbar />
       <Intro />
       <About />
-      <Cards />
+      <Projects />
       <Footer />
     </section>
   )

@@ -8,10 +8,11 @@ import bootstrapImage from '../assets/images/bootstrap.png'
 import sassImage from '../assets/images/sass.png'
 import tailwindImage from '../assets/images/tailwind.png'
 import { RxLinkedinLogo, RxGithubLogo } from 'react-icons/rx'
+import { Element } from 'react-scroll'
 
 const Intro = () => {
   return (
-    <section id="intro" className="flex items-center justify-center min-h-screen bg-slate-50">
+    <Element name="intro" id="intro" className="flex items-center justify-center min-h-screen pb-8 intro bg-slate-50">
       <div className="container m-auto w-full h-full md:w-[1000px]">
         <div id="intro-main" className="flex flex-col-reverse items-center justify-center md:flex-row">
           <div id="intro-main-text" className="w-full mt-8 md:w-7/12 md:mt-0">
@@ -50,7 +51,7 @@ const Intro = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Element>
   )
 }
 

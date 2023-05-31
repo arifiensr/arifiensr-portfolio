@@ -87,7 +87,7 @@ module.exports = {
         blob: 'blob 5s ease-in-out infinite',
       },
       backgroundImage: {
-        'profile-picture': "url('./src/assets/images/profilepic.png')",
+        'profile-picture': "url('./public/profilepic.png')",
       },
     },
   },

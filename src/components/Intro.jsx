@@ -78,7 +78,7 @@ const Intro = () => {
                 <TooltipProvider key={item.title + index} delayDuration={0}>
                   <Tooltip>
                     <TooltipTrigger>
-                      <img src={item.image} className="w-auto h-12 transition-all hover:text-red-700 duration-[400ms]" />
+                      <img src={item.image} className="w-auto h-12 transition-all duration-500 hover:text-red-700" />
                     </TooltipTrigger>
                     <TooltipContent className="font-oxygen-mono" sideOffset={10}>
                       <p>{item.title}</p>

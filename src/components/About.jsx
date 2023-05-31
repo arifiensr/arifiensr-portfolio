@@ -2,7 +2,7 @@ import { Element } from 'react-scroll'
 
 const About = () => {
   return (
-    <Element name="about" id="about" className="flex flex-col items-center justify-center pt-8 mx-auto bg-white md:py-32 md:flex-row">
+    <Element name="about" id="about" className="flex flex-col items-center justify-center mx-auto bg-white md:py-32 md:flex-row">
       <div className="container m-auto h-full w-full md:w-[1000px]">
         <div id="about-content" className="flex flex-col items-center justify-between w-full gap-6 md:items-start md:flex-row">
           <div id="about-image" className="flex items-center justify-center w-full mt-24 bg-no-repeat bg-cover shadow-2xl md:mt-0 md:w-5/12 bg-profile-picture2 animate-blob">

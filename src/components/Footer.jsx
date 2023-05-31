@@ -14,7 +14,7 @@ const Footer = () => {
               <Tooltip>
                 <TooltipTrigger>
                   <a href="https://www.linkedin.com/in/arifiensr/" target="_blank">
-                    <RxLinkedinLogo className=" text-2xl hover:invert transition-all duration-[400ms]" />
+                    <RxLinkedinLogo className="text-2xl hover:animate-bounce" />
                   </a>
                 </TooltipTrigger>
                 <TooltipContent className="font-oxygen-mono" sideOffset={10}>
@@ -26,7 +26,7 @@ const Footer = () => {
               <Tooltip>
                 <TooltipTrigger>
                   <a href="https://github.com/arifiensr" target="_blank">
-                    <RxGithubLogo className=" text-2xl hover:invert transition-all duration-[400ms]" />
+                    <RxGithubLogo className="text-2xl  hover:animate-bounce" />
                   </a>
                 </TooltipTrigger>
                 <TooltipContent className="font-oxygen-mono" sideOffset={10}>

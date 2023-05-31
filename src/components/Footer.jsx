@@ -26,7 +26,7 @@ const Footer = () => {
               <Tooltip>
                 <TooltipTrigger>
                   <a href="https://github.com/arifiensr" target="_blank">
-                    <RxGithubLogo className="text-2xl  hover:animate-bounce" />
+                    <RxGithubLogo className="text-2xl hover:animate-bounce" />
                   </a>
                 </TooltipTrigger>
                 <TooltipContent className="font-oxygen-mono" sideOffset={10}>

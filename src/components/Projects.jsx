@@ -1,6 +1,6 @@
 import { Element } from 'react-scroll'
 import { Button } from './ui/button'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/card'
+import { Card, CardContent } from './ui/card'
 import photologueMockup from '../assets/images/photologueMockup.png'
 import katflixMockup from '../assets/images/katflixMockup.png'
 import { ExternalLinkIcon, GithubIcon } from 'lucide-react'
@@ -42,7 +42,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <Element name="projects" id="projects" className="flex items-center justify-center w-full min-h-screen pt-20 m-auto bg-slate-50">
+    <Element name="projects" id="projects" className="flex items-center justify-center w-full pt-20 m-auto md:py-32 bg-slate-50">
       <div className="container flex items-center justify-center w-full md:w-[1000px] flex-col gap-4">
         <div id="projects-title" className="flex items-center justify-center w-full">
           <h2 className="text-2xl font-bold font-poppins">Projects</h2>

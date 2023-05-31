@@ -1,4 +1,3 @@
-import profileImage from '../assets/images/profilepic.png'
 import htmlImage from '../assets/images/html.png'
 import cssImage from '../assets/images/css.png'
 import jsImage from '../assets/images/js.png'
@@ -8,7 +7,6 @@ import bootstrapImage from '../assets/images/bootstrap.png'
 import sassImage from '../assets/images/sass.png'
 import tailwindImage from '../assets/images/tailwind.png'
 import { Button } from './ui/button'
-import { RxLinkedinLogo, RxGithubLogo } from 'react-icons/rx'
 import { Element, Link } from 'react-scroll'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip'
 import { SendIcon } from 'lucide-react'
@@ -52,7 +50,7 @@ const Intro = () => {
   return (
     <Element name="intro" id="intro" className="flex items-center justify-center min-h-screen pb-8 intro bg-slate-50">
       <div className="container m-auto w-full h-full md:w-[1000px]">
-        <div id="intro-main" className="flex flex-col-reverse items-center justify-center md:flex-row">
+        <div id="intro-main" className="flex flex-col-reverse items-center justify-center gap-4 md:flex-row">
           <div id="intro-main-text" className="w-full mt-8 md:w-7/12 md:mt-0">
             <h1 className="pb-2 text-4xl font-bold text-center md:text-5xl font-poppins md:text-start">Hi! I'm Arifien</h1>
             <h2 className="pb-2 text-2xl font-bold text-center text-indigo-600 md:text-3xl font-oxygen-mono md:text-start">Front-End Web Developer</h2>
@@ -65,8 +63,8 @@ const Intro = () => {
               </Link>
             </div>
           </div>
-          <div id="intro-main-image" className="flex items-center justify-center w-full mt-24 bg-no-repeat bg-cover shadow-xl md:mt-0 md:w-5/12 bg-profile-picture animate-blob">
-            <div className="w-auto overflow-hidden rounded-full h-80">{/* <img src={profileImage} className="object-contain w-full h-full " /> */}</div>
+          <div id="intro-main-image" className="flex items-center justify-center w-full mt-24 bg-no-repeat bg-cover shadow-2xl md:mt-0 md:w-5/12 bg-profile-picture1 animate-blob">
+            <div className="w-auto overflow-hidden rounded-full h-80"></div>
           </div>
         </div>
 

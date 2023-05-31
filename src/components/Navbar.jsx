@@ -1,13 +1,13 @@
 import { Link } from 'react-scroll'
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from './ui/dropdown-menu'
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu'
 import { SlMenu } from 'react-icons/sl'
 
 const Navbar = () => {
   return (
     <section id="navbar" className="fixed top-0 flex items-center justify-between w-full h-16 p-8 bg-white w navbar drop-shadow">
-      <div id="navbar-title" className="flex-initial cursor-pointer">
-        <span className="text-xl font-bold font-major-mono-display hover:text-indigo-600 transition-all dsf duration-[400ms]">
-          <span className="">A</span>rifiensr
+      <div id="navbar-title" className="flex-initial cursor-pointer group">
+        <span className="text-xl font-bold font-major-mono-display  transition-all dsf duration-[400ms]">
+          <span className="group-hover:text-indigo-600">A</span>rifiensr
         </span>
       </div>
       <div id="navbar-links" className="flex-initial hidden md:flex ">

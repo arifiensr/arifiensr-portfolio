@@ -7,9 +7,11 @@ import viteImage from '../assets/images/vite.png'
 import bootstrapImage from '../assets/images/bootstrap.png'
 import sassImage from '../assets/images/sass.png'
 import tailwindImage from '../assets/images/tailwind.png'
+import { Button } from './ui/button'
 import { RxLinkedinLogo, RxGithubLogo } from 'react-icons/rx'
-import { Element } from 'react-scroll'
+import { Element, Link } from 'react-scroll'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip'
+import { SendIcon } from 'lucide-react'
 
 const skills = [
   {
@@ -53,14 +55,14 @@ const Intro = () => {
         <div id="intro-main" className="flex flex-col-reverse items-center justify-center md:flex-row">
           <div id="intro-main-text" className="w-full mt-8 md:w-7/12 md:mt-0">
             <h1 className="pb-2 text-4xl font-bold text-center md:text-5xl font-poppins md:text-start">Hi! I'm Arifien</h1>
-            <h2 className="pb-2 text-2xl font-bold text-center text-red-700 md:text-3xl font-oxygen-mono md:text-start">Front-End Web Developer</h2>
+            <h2 className="pb-2 text-2xl font-bold text-center text-indigo-600 md:text-3xl font-oxygen-mono md:text-start">Front-End Web Developer</h2>
             <p className="leading-7 tracking-wide text-center font-poppins md:text-start">I create visually stunning and intuitive web experiences with a focus on seamless interactions and captivating design. Let's embark on a journey of exceptional web development together!</p>
             <div className="flex items-center justify-center gap-3 mt-6 md:justify-start md:mt-12 ">
-              <TooltipProvider delayDuration={0}>
+              {/* <TooltipProvider delayDuration={0}>
                 <Tooltip>
                   <TooltipTrigger>
                     <a href="https://www.linkedin.com/in/arifiensr/" target="_blank">
-                      <RxLinkedinLogo className=" text-4xl hover:text-red-700 transition-all duration-[400ms]" />
+                      <RxLinkedinLogo className=" text-4xl hover:text-indigo-600 transition-all duration-[400ms]" />
                     </a>
                   </TooltipTrigger>
                   <TooltipContent className="font-oxygen-mono" sideOffset={10}>
@@ -72,14 +74,19 @@ const Intro = () => {
                 <Tooltip>
                   <TooltipTrigger>
                     <a href="https://github.com/arifiensr" target="_blank">
-                      <RxGithubLogo className=" text-4xl hover:text-red-700 transition-all duration-[400ms]" />
+                      <RxGithubLogo className=" text-4xl hover:text-indigo-600 transition-all duration-[400ms]" />
                     </a>
                   </TooltipTrigger>
                   <TooltipContent className="font-oxygen-mono" sideOffset={10}>
                     <p>My Github</p>
                   </TooltipContent>
                 </Tooltip>
-              </TooltipProvider>
+              </TooltipProvider> */}
+              <Link activeClass="active" className="contact" to="contact" spy={true} smooth={true} duration={1000}>
+                <Button className="flex gap-2 transition-all duration-500 hover:bg-indigo-700 font-poppins">
+                  Let's Connect! <SendIcon size={18} />
+                </Button>
+              </Link>
             </div>
           </div>
           <div id="intro-main-image" className="flex items-center justify-center w-full mt-24 md:mt-0 md:w-5/12">

@@ -10,7 +10,7 @@ const projects = [
     title: 'Photologue',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ullam perspiciatis placeat, libero praesentium asperiores tempore quidem magni dolore ipsum. Facere eos nam ea est obcaecati, recusandae perspiciatis porro possimus!',
     preview: photologueMockup,
-    tech(classStyle) {
+    tech() {
       return (
         <>
           <FaReact />
@@ -50,10 +50,10 @@ const Projects = () => {
         <div className="flex flex-col gap-8 card-content-wrapper">
           {projects.map((item, index) => {
             return (
-              <Card key={item.title + index} className="w-full font-poppins">
+              <Card key={item.title + index} className="w-full shadow-lg font-poppins">
                 <CardContent className={`flex p-4 gap-4 flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
-                  <div className="w-full md:w-[500px] card-image h-auto m-auto">
-                    <img src={item.preview} className="object-cover w-full h-full rounded-lg" />
+                  <div className="w-full md:w-[400px] card-image h-auto m-auto">
+                    <img src={item.preview} className="object-cover w-full h-full rounded-lg shadow-lg" />
                   </div>
                   <div className="flex flex-col flex-1 text-center card-desc">
                     <h1 className="pb-2 text-xl font-bold font-poppins">{item.title}</h1>
@@ -61,12 +61,12 @@ const Projects = () => {
                     <div className="flex items-center justify-center gap-6 pb-5 text-3xl card-desc-tech">{item.tech()}</div>
                     <div className="flex items-end justify-center w-full h-full gap-6 card-desc-button">
                       <a href={item.github} target="_blank">
-                        <Button className="flex gap-2 hover:bg-red-700">
+                        <Button className="flex gap-2 transition-all duration-500 hover:bg-indigo-700">
                           Github <GithubIcon size={20} />
                         </Button>
                       </a>
                       <a href={item.demo} target="_blank">
-                        <Button className="flex gap-2 hover:bg-red-700">
+                        <Button className="flex gap-2 transition-all duration-500 hover:bg-indigo-700">
                           Demo <ExternalLinkIcon size={20} />
                         </Button>
                       </a>

@@ -3,6 +3,7 @@ import Projects from '../components/Projects'
 import Footer from '../components/Footer'
 import Intro from '../components/Intro'
 import Navbar from '../components/Navbar'
+import Contact from '../components/Contact'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Intro />
       <About />
       <Projects />
+      <Contact />
       <Footer />
     </section>
   )

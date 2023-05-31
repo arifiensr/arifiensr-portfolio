@@ -47,7 +47,7 @@ const Contact = () => {
                     {item.icon('text-2xl mb-2')}
                     <h1 className="text-xl font-bold font-poppins">{item.title}</h1>
                     <p className="pb-4 text-muted-foreground">{item.content}</p>
-                    <p className="flex items-center gap-2 text-muted-foreground">
+                    <p className="flex items-center gap-2 text-muted-foreground group-hover:text-indigo-600">
                       Connect <ArrowRightIcon className="flex transition-all duration-500 group-hover:translate-x-2" size={18} />
                     </p>
                   </CardContent>

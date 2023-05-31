@@ -2,13 +2,14 @@ import { Element } from 'react-scroll'
 import { Button } from './ui/button'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/card'
 import photologueMockup from '../assets/images/photologueMockup.png'
+import katflixMockup from '../assets/images/katflixMockup.png'
 import { ExternalLinkIcon, GithubIcon } from 'lucide-react'
 import { FaBootstrap, FaReact, FaSass } from 'react-icons/fa'
 
 const projects = [
   {
     title: 'Photologue',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ullam perspiciatis placeat, libero praesentium asperiores tempore quidem magni dolore ipsum. Facere eos nam ea est obcaecati, recusandae perspiciatis porro possimus!',
+    description: 'Photologue is a photo sharing website that allows photographers to showcase their work, connect with others in the community, and gain exposure in a visually appealing and interactive platform.',
     preview: photologueMockup,
     tech() {
       return (
@@ -23,20 +24,19 @@ const projects = [
     demo: 'https://photologue.netlify.app/',
   },
   {
-    title: 'Photologue',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ullam perspiciatis placeat, libero praesentium asperiores tempore quidem magni dolore ipsum. Facere eos nam ea est obcaecati, recusandae perspiciatis porro possimus!',
-    preview: photologueMockup,
+    title: 'Katflix',
+    description: 'Katflix is a versatile movie streaming website that offers a vast collection of films across genres and languages, providing users with a convenient and enjoyable platform to indulge in the magic of cinema.',
+    preview: katflixMockup,
     tech() {
       return (
         <>
           <FaReact />
           <FaBootstrap />
-          <FaSass />
         </>
       )
     },
-    github: 'https://github.com/arifiensr/photologue',
-    demo: 'https://photologue.netlify.app/',
+    github: 'https://github.com/arifiensr/katflix-react',
+    demo: 'https://katflix.netlify.app/',
   },
 ]
 

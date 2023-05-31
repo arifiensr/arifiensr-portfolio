@@ -58,41 +58,15 @@ const Intro = () => {
             <h2 className="pb-2 text-2xl font-bold text-center text-indigo-600 md:text-3xl font-oxygen-mono md:text-start">Front-End Web Developer</h2>
             <p className="leading-7 tracking-wide text-center font-poppins md:text-start">I create visually stunning and intuitive web experiences with a focus on seamless interactions and captivating design. Let's embark on a journey of exceptional web development together!</p>
             <div className="flex items-center justify-center gap-3 mt-6 md:justify-start md:mt-12 ">
-              {/* <TooltipProvider delayDuration={0}>
-                <Tooltip>
-                  <TooltipTrigger>
-                    <a href="https://www.linkedin.com/in/arifiensr/" target="_blank">
-                      <RxLinkedinLogo className=" text-4xl hover:text-indigo-600 transition-all duration-[400ms]" />
-                    </a>
-                  </TooltipTrigger>
-                  <TooltipContent className="font-oxygen-mono" sideOffset={10}>
-                    <p>My LinkedIn</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-              <TooltipProvider delayDuration={0}>
-                <Tooltip>
-                  <TooltipTrigger>
-                    <a href="https://github.com/arifiensr" target="_blank">
-                      <RxGithubLogo className=" text-4xl hover:text-indigo-600 transition-all duration-[400ms]" />
-                    </a>
-                  </TooltipTrigger>
-                  <TooltipContent className="font-oxygen-mono" sideOffset={10}>
-                    <p>My Github</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider> */}
               <Link activeClass="active" className="contact" to="contact" spy={true} smooth={true} duration={1000}>
-                <Button className="flex gap-2 transition-all duration-500 hover:bg-indigo-700 font-poppins">
+                <Button className="flex gap-2 transition-all duration-500 hover:bg-indigo-700 font-poppins hover:animate-bounce">
                   Let's Connect! <SendIcon size={18} />
                 </Button>
               </Link>
             </div>
           </div>
-          <div id="intro-main-image" className="flex items-center justify-center w-full mt-24 md:mt-0 md:w-5/12">
-            <div className="w-auto overflow-hidden rounded-full h-80">
-              <img src={profileImage} className="object-contain w-full h-full " />
-            </div>
+          <div id="intro-main-image" className="flex items-center justify-center w-full mt-24 bg-no-repeat bg-cover shadow-xl md:mt-0 md:w-5/12 bg-profile-picture animate-blob">
+            <div className="w-auto overflow-hidden rounded-full h-80">{/* <img src={profileImage} className="object-contain w-full h-full " /> */}</div>
           </div>
         </div>
 

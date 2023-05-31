@@ -12,22 +12,22 @@ const Navbar = () => {
       </div>
       <div id="navbar-links" className="flex-initial hidden md:flex ">
         <ul className="flex gap-4 font-oxygen-mono">
-          <li className="p-1 m-4 transition-all border-b-2 border-white hover:text-indigo-600 hover:border-indigo-600 duration-[400ms] cursor-pointer">
+          <li className="p-1 m-4 transition-all border-b-2 border-transparent hover:text-indigo-600 hover:border-indigo-600  duration-[400ms] cursor-pointer">
             <Link activeClass="active" className="home" to="home" spy={true} smooth={true} duration={500}>
               Home
             </Link>
           </li>
-          <li className="p-1 m-4 transition-all border-b-2 border-white hover:text-indigo-600 hover:border-indigo-600 duration-[400ms] cursor-pointer">
+          <li className="p-1 m-4 transition-all border-b-2 border-transparent hover:text-indigo-600 hover:border-indigo-600 duration-[400ms] cursor-pointer">
             <Link activeClass="active" className="about" to="about" spy={true} smooth={true} duration={500}>
               About
             </Link>
           </li>
-          <li className="p-1 m-4 transition-all border-b-2 border-white hover:text-indigo-600 hover:border-indigo-600 duration-[400ms] cursor-pointer">
+          <li className="p-1 m-4 transition-all border-b-2 border-transparent hover:text-indigo-600 hover:border-indigo-600 duration-[400ms] cursor-pointer">
             <Link activeClass="active" className="projects" to="projects" spy={true} smooth={true} duration={500}>
               Projects
             </Link>
           </li>
-          <li className="p-1 m-4 transition-all border-b-2 border-white hover:text-indigo-600 hover:border-indigo-600 duration-[400ms] cursor-pointer">
+          <li className="p-1 m-4 transition-all border-b-2 border-transparent hover:text-indigo-600 hover:border-indigo-600 duration-[400ms] cursor-pointer">
             <Link activeClass="active" className="contact" to="contact" spy={true} smooth={true} duration={500}>
               Contact
             </Link>

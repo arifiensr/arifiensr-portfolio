@@ -68,10 +68,26 @@ module.exports = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: 0 },
         },
+        'border-circle': {
+          '0%': { borderBottomColor: 'red' },
+          '33%': { borderLeftColor: 'blue' },
+          '66%': { borderTopColor: 'blue' },
+          '100%': { borderRightColor: 'green' },
+        },
+        blob: {
+          '0%': { borderRadius: '60% 40% 30% 70%/60% 30% 70% 40%' },
+          '50%': { borderRadius: '30% 60% 70% 40%/50% 60% 30% 60%' },
+          '100%': { borderRadius: '60% 40% 30% 70%/60% 30% 70% 40%' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'border-circle': 'border-circle 2s ease-out infinite',
+        blob: 'blob 5s ease-in-out infinite',
+      },
+      backgroundImage: {
+        'profile-picture': "url('./src/assets/images/profilepic.png')",
       },
     },
   },

@@ -33,7 +33,7 @@ const contact = [
 
 const Contact = () => {
   return (
-    <Element name="contact" id="contact" className="flex items-center justify-center py-8 m-auto">
+    <Element name="contact" id="contact" className="flex items-center justify-center pt-20 pb-8 m-auto">
       <div className="container w-full h-full md:w-[1000px] flex flex-col">
         <div className="flex items-center justify-center w-full h-auto pb-4 text-2xl contact-title">
           <h1 className="font-bold font-poppins">Contact</h1>

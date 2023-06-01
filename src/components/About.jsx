@@ -10,7 +10,7 @@ const About = () => {
           </div>
           <div id="about-text" className="flex flex-col items-center justify-center w-full pt-6 md:items-start md:w-7/12 md:pt-0">
             <h1 className="text-2xl font-bold font-poppins">About Me</h1>
-            <p className="py-4 leading-7 tracking-wide text-center md:text-start font-poppins">A front-end developer enthusiast with 6+ years of experience managing and building projects in an Indonesian State-owned Company successfully reaches the highest career position as a Project Manager at 27. Skilled at creating responsive websites using JS framework and bootstrap. Eager to face more challenges by learning new knowledge to make a perfect website.</p>
+            <p className="py-4 leading-7 tracking-wide text-center md:text-start font-poppins">A front-end developer enthusiast with 6+ years of experience managing and building projects in an Indonesian State-owned Company successfully reaches the highest career position as a Project Manager at 27. Skilled at creating responsive websites using React, Tailwind, Bootstrap, and other frameworks or libraries. Eager to face more challenges by learning new knowledge to make a perfect website.</p>
           </div>
         </div>
       </div>

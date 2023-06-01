@@ -57,7 +57,7 @@ const Intro = () => {
             <p className="leading-7 tracking-wide text-center font-poppins md:text-start">I create visually stunning and intuitive web experiences with a focus on seamless interactions and captivating design. Let's embark on a journey of exceptional web development together!</p>
             <div className="flex items-center justify-center gap-3 mt-6 md:justify-start md:mt-12 ">
               <Link activeClass="active" className="contact" to="contact" spy={true} smooth={true} duration={1000}>
-                <Button className="flex gap-2 text-base transition-all duration-500 hover:bg-indigo-700 font-poppins hover:animate-bounce">
+                <Button className="flex gap-2 text-base transition-all duration-500 hover:bg-indigo-700 font-poppins hover:shadow-lg hover:shadow-indigo-900 hover:scale-105 active:scale-95">
                   Let's Connect! <SendIcon size={18} />
                 </Button>
               </Link>

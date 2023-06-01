@@ -61,12 +61,12 @@ const Projects = () => {
                     <div className="flex items-center justify-center gap-6 pb-5 text-3xl card-desc-tech">{item.tech()}</div>
                     <div className="flex items-end justify-center w-full h-full gap-6 card-desc-button">
                       <a href={item.github} target="_blank">
-                        <Button className="flex gap-2 transition-all duration-500 hover:bg-indigo-700">
+                        <Button className="flex gap-2 transition-all duration-500 hover:bg-indigo-700 hover:shadow-lg hover:shadow-indigo-900 hover:scale-105 active:scale-95">
                           Github <GithubIcon size={20} />
                         </Button>
                       </a>
                       <a href={item.demo} target="_blank">
-                        <Button className="flex gap-2 transition-all duration-500 hover:bg-indigo-700">
+                        <Button className="flex gap-2 transition-all duration-500 hover:bg-indigo-700 hover:shadow-lg hover:shadow-indigo-900 hover:scale-105 active:scale-95">
                           Demo <ExternalLinkIcon size={20} />
                         </Button>
                       </a>

@@ -7,7 +7,7 @@ const Navbar = () => {
     <section id="navbar" className="fixed top-0 flex items-center justify-between w-full h-16 p-8 bg-white w navbar drop-shadow">
       <div id="navbar-title" className="flex-initial cursor-pointer group">
         <span className="text-xl font-bold font-major-mono-display  transition-all dsf duration-[400ms]">
-          <span className="group-hover:text-indigo-600">A</span>rifiensr
+          <span className="text-indigo-600">A</span>rifiensr
         </span>
       </div>
       <div id="navbar-links" className="flex-initial hidden md:flex ">

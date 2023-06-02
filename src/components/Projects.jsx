@@ -25,7 +25,7 @@ const projects = [
   },
   {
     title: 'Katflix',
-    description: 'Katflix is a versatile movie streaming website that offers a vast collection of films across genres and languages, providing users with a convenient and enjoyable platform to indulge in the magic of cinema.',
+    description: 'Katflix is a user-friendly movie database website that offers a wide range of films, providing detailed information, user ratings, and personalized features for movie enthusiasts.',
     preview: katflixMockup,
     tech() {
       return (
